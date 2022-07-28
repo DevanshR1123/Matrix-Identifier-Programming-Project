@@ -3,6 +3,8 @@
 //check except Diagonal elements are 0 or not
 int diagmat(int arr[MAX_ROWS][MAX_COLS],int x,int y)
 {
+    if (x!=y) return 0;
+    
     int i,j;
     int check=0;
     for(i=0;i<x;i++)
