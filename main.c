@@ -33,6 +33,7 @@ int main (){
     }
 
     printf("rank of matrix is: %d\n",rank(a,m,n));
+    printf("nullity of matrix is: %d\n",nullity(a,m,n));
     printf("trace of matrix is: %d\n",trace(a,m,n));
     printf("Diagonal Matrix: %d\n",diagmat(a,m,n));
 
