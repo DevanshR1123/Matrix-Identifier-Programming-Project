@@ -3,10 +3,11 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+
 #include "params.h"
 #include "rref.c"
-#include "rank.c"
-#include "trace.c"
+// #include "rank.c"
+// #include "trace.c"
 
 int main (){
     int i, j, k;
@@ -30,8 +31,8 @@ int main (){
         printf("\n");
     }
 
-    printf("rank of matrix is: %d\n",rank(a,m,n));
-    printf("trace of matrix is: %d\n",trace(a,m,n));
+    // printf("rank of matrix is: %d\n",rank(a,m,n));
+    // printf("trace of matrix is: %d\n",trace(a,m,n));
 
 
     rref(a,m,n);
@@ -43,5 +44,4 @@ int main (){
         printf("\n");
     }
     return 0;
-
 }
