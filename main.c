@@ -3,9 +3,10 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
-#include <rref.c>
-#include <rank.c>
-#include <trace.c>
+#include "params.h"
+#include "rref.c"
+#include "rank.c"
+#include "trace.c"
 
 
 

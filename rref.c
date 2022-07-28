@@ -1,4 +1,4 @@
-#include <params.h>
+#include "params.h"
 
 //funtction to find reduced row echelon form
 void rref(int a[MAX_ROWS][MAX_COLS], int m, int n){

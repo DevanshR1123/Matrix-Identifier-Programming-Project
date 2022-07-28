@@ -1,4 +1,4 @@
-#include <params.h>
+#include "params.h"
 
 
 //function to find trace of matrix
