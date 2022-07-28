@@ -1,9 +1,6 @@
-// take matrix and find reduced row echelon form using a function
-
-
+// Matrix Identifier
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 #include <string.h>
 
@@ -14,7 +11,7 @@
 void swap (int, int);
 
 
-void rref(int[][],int,int);
+void rref(int[MAX_ROWS][MAX_COLS],int,int);
 
 
 int main (){
