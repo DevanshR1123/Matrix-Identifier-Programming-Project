@@ -6,8 +6,9 @@
 
 #include "params.h"
 #include "rref.c"
-// #include "rank.c"
-// #include "trace.c"
+#include "trace.c"
+#include "rank.c"
+#include "diagmat.c"
 
 int main (){
     int i, j, k;
@@ -31,8 +32,9 @@ int main (){
         printf("\n");
     }
 
-    // printf("rank of matrix is: %d\n",rank(a,m,n));
-    // printf("trace of matrix is: %d\n",trace(a,m,n));
+    printf("rank of matrix is: %d\n",rank(a,m,n));
+    printf("trace of matrix is: %d\n",trace(a,m,n));
+    printf("Diagonal Matrix: %d\n",diagmat(a,m,n));
 
 
     rref(a,m,n);

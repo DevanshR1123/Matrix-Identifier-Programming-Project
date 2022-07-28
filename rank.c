@@ -1,6 +1,5 @@
 #include "params.h"
-#include "rref.c"
-#include "trace.c"
+
 
 
 //function to find rank of matrix
