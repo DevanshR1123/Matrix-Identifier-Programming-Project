@@ -1,6 +1,5 @@
 #include "params.h"
 
-
 //function to find trace of matrix
 int trace(int a[MAX_ROWS][MAX_COLS], int m, int n){
     int i, j, trace = 0;

@@ -8,17 +8,6 @@
 #include "rank.c"
 #include "trace.c"
 
-
-
-#define MAX_ROWS 10
-#define MAX_COLS 10
-
-void swap (int, int);
-
-
-void rref(int[MAX_ROWS][MAX_COLS],int,int);
-
-
 int main (){
     int i, j, k;
     int m, n;
