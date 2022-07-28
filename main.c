@@ -5,8 +5,8 @@
 #include <string.h>
 
 
-#define MAX_ROWS 100
-#define MAX_COLS 100
+#define MAX_ROWS 10
+#define MAX_COLS 10
 
 void swap (int, int);
 
@@ -35,6 +35,10 @@ int main (){
             printf("%d ", a[i][j]);
         printf("\n");
     }
+
+    printf("rank of matrix is: %d\n",rank(a,m,n));
+    printf("trace of matrix is: %d\n",trace(a,m,n));
+
 
     rref(a,m,n);
 
@@ -87,5 +91,6 @@ int trace(int a[MAX_ROWS][MAX_COLS], int m, int n){
 
 //function to find rank of matrix
 int rank(int a[MAX_ROWS][MAX_COLS], int m, int n){
+    rref(a,m,n);
     return trace(a,m,n);
 }
