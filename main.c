@@ -52,15 +52,6 @@ int main (){
 
 }
 
-//swap function
-void swap (int i, int j){
-    int temp;
-    temp = i;
-    i = j;
-    j = temp;
-}
-
-
 //funtction to find reduced row echelon form
 void rref(int a[MAX_ROWS][MAX_COLS], int m, int n){
     int i, j, k;
