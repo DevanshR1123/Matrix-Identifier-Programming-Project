@@ -48,6 +48,7 @@ int main (){
 
 }
 
+//swap function
 void swap (int i, int j){
     int temp;
     temp = i;
@@ -72,4 +73,19 @@ void rref(int a[MAX_ROWS][MAX_COLS], int m, int n){
                     a[i][j] = a[i][j] - a[i][k]*a[k][j];
     }
  
+}
+
+//function to find trace of matrix
+int trace(int a[MAX_ROWS][MAX_COLS], int m, int n){
+    int i, j, trace = 0;
+    for (i = 0; i < m; i++)
+        for (j = 0; j < n; j++)
+            if (i == j)
+                trace = trace + a[i][j];
+    return trace;
+}
+
+//function to find rank of matrix
+int rank(int a[MAX_ROWS][MAX_COLS], int m, int n){
+    return trace(a,m,n);
 }
