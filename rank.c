@@ -1,11 +1,9 @@
 
-
 // function to find rank of matrix
 int rank(int a[MAX_ROWS][MAX_COLS], int m, int n) {
-    int mat_copy[MAX_ROWS][MAX_COLS];
-    copy(mat_copy, a, m, n);
-    rref(mat_copy, m, n);
-    return trace(mat_copy, m, n);
+    float mat_copy[MAX_ROWS][MAX_COLS];
+    rref(mat_copy, a, m, n);
+    return trace_float(mat_copy, m, n);
 }
 
 // function to find nullity of matrix

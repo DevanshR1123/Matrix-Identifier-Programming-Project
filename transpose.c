@@ -1,7 +1,7 @@
 // function to transpose a matrix
 
 void transpose(int x[MAX_ROWS][MAX_COLS], int a, int b) {
-    int i, j, temp;
+    int i, j;
     for (i = 0; i < a; i++)
         for (j = 0; j < b; j++)
             if (i < j)
