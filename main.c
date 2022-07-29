@@ -12,10 +12,8 @@ int main() {
     int a[MAX_ROWS][MAX_COLS];
     float x[MAX_ROWS][MAX_COLS];
 
-    printf("Enter the number of rows: ");
-    scanf("%d", &m);
-    printf("Enter the number of columns: ");
-    scanf("%d", &n);
+    printf("Enter values for m and n: ");
+    scanf("%d %d", &m, &n);
 
     printf("Enter the matrix: \n");
     for (i = 0; i < m; i++)
