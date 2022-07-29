@@ -1,9 +1,9 @@
-int skewsymmetric()
+int skewsymmetric(int a[10][10],int order)
 {
- int a[10][10],i,j,m;
- for(i=1;i<=m;i++)
+ int i,j;
+ for(i=1;i<=order;i++)
  {
-  for(j=1;j<=m;j++)
+  for(j=1;j<=order;j++)
   {
    if(a[i][j]!=-a[j][i])
    {
