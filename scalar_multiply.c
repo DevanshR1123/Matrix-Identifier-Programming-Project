@@ -1,12 +1,8 @@
+// multiply a matrix by a scalar
 
- int multiply (int Multiplication[10][10],int rows,int columns,int Number )
- {
-  int i,j;
- 	for(i=0;i<rows;i++)
-  	{
-   		for(j=0;j<columns;j++)
-    	{
-      		Multiplication[i][j] = Number * Multiplication[i][j];    
-   	 }
-  	}
- }
+void scalar_multiply(int x[MAX_ROWS][MAX_COLS], int rows, int columns, int k) {
+    int i, j;
+    for (i = 0; i < rows; i++)
+        for (j = 0; j < columns; j++)
+            x[i][j] = k * x[i][j];
+}

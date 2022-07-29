@@ -1,42 +1,12 @@
-#include<stdio.h>
-int main()
-{
-  int m, n, c, d, matrix[10][10], transpose[10][10];
+// checks if matrix is symmetric
 
-  printf("Enter the number of rows and columns of matrix\n");
-  scanf("%d%d",&m,&n);
-  printf("Enter elements of the matrix\n");
+int symmetric(int a[MAX_ROWS][MAX_COLS], int m, int n) {
+    int i, j;
+    if (m != n) return 0;
 
-  for (c = 0; c < m; c++) {
-    for (d = 0; d < n; d++){
-      scanf("%d", &matrix[c][d]);
-      }
-    }
-  for (c = 0; c < m; c++){
-    for (d = 0; d < n; d++){
-      transpose[d][c] = matrix[c][d];
-      }
-    }  
+    for (i = 1; i <= m; i++)
+        for (j = 1; j <= n; j++)
+            if (a[i][j] != a[j][i]) return 0;
 
-  if (m == n) 
-  {
-    for (c = 0; c < m; c++)
-    {
-      for (d = 0; d < m; d++)
-      {
-        if (matrix[c][d] != transpose[c][d])
-          break;
-      }
-      if (d != m)
-        break;
-    }
-    if (c == m)
-      printf("The matrix is symmetric.\n");
-    else
-      printf("The matrix isn't symmetric.\n");
-  }
-  else
-    printf("The matrix isn't symmetric.\n");
-
-  return 0;
+    return 1;
 }
