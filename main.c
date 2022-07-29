@@ -41,5 +41,7 @@ int main() {
     printf("The reduced row echelon form is: \n");
     print_mat_float(x, m, n);
 
+    getchar();
+
     return 0;
 }
