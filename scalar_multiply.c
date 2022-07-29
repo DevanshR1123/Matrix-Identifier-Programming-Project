@@ -1,43 +1,12 @@
-#include<stdio.h>
- 
-int main()
-{
- 	int i, j, rows, columns, Multiplication[10][10], Number;
-  int multiply();
-  
- 	printf("\n Please Enter Number of rows and columns\n");
- 	scanf("%d %d", &i, &j);
- 
- 	printf("\n Please Enter the Matrix Elements \n");
- 	for(rows = 0; rows < i; rows++)
+
+ int multiply (int Multiplication[10][10],int rows,int columns,int Number )
+ {
+  int i,j;
+ 	for(i=0;i<rows;i++)
   	{
-   		for(columns = 0;columns < j;columns++)
+   		for(j=0;j<columns;j++)
     	{
-      		scanf("%d", &Multiplication[rows][columns]);
-    	}
+      		Multiplication[i][j] = Number * Multiplication[i][j];    
+   	 }
   	}
-    
  }
- int multiply(){
- 	printf("\n Please Enter the Multiplication Value  :  ");
- 	scanf("%d", &Number);
- 	  
- 	for(rows = 0; rows < i; rows++)
-  	{
-   		for(columns = 0; columns < j; columns++)
-    	{
-      		Multiplication[rows][columns] = Number * Multiplication[rows][columns];    
-   	 	}
-  	}
- 
- 	printf("\n The Result of a Scalar Matrix Multiplication is : \n");
- 	for(rows = 0; rows < i; rows++)
-  	{
-   		for(columns = 0; columns < j; columns++)
-    	{
-      		printf("%d \t ", Multiplication[rows][columns]);
-    	}
-    	printf("\n");
-  	}
- 	return 0;
-}
