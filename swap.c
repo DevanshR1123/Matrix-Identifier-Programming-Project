@@ -1,7 +1,6 @@
-//swap function
-void swap (int i, int j){
-    int temp;
-    temp = i;
-    i = j;
-    j = temp;
+// swap function
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }

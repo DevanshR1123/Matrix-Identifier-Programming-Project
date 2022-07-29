@@ -1,16 +1,12 @@
 // Matrix Identifier
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 #include <string.h>
 
 #include "params.h"
-#include "rref.c"
-#include "trace.c"
-#include "rank.c"
-#include "diagmat.c"
 
-int main (){
+int main() {
     int i, j, k;
     int m, n;
     int a[MAX_ROWS][MAX_COLS];
@@ -32,13 +28,15 @@ int main (){
         printf("\n");
     }
 
-    printf("rank of matrix is: %d\n",rank(a,m,n));
-    printf("nullity of matrix is: %d\n",nullity(a,m,n));
-    printf("trace of matrix is: %d\n",trace(a,m,n));
-    printf("Diagonal Matrix: %d\n",diagmat(a,m,n));
+    printf("rank of matrix is: %d\n", rank(a, m, n));
+    printf("nullity of matrix is: %d\n", nullity(a, m, n));
+    printf("trace of matrix is: %d\n", trace(a, m, n));
+    printf("Diagonal Matrix: %d\n", diagmat(a, m, n));
+    printf("Lower Triangular Matrix: %d\n", lowerT(a, m, n));
+    printf("Upper Triangular Matrix: %d\n", upperT(a, m, n));
+    printf("Orthogonal Matrix: %d\n", orthogonal(a, m, n));
 
-
-    rref(a,m,n);
+    rref(a, m, n);
 
     printf("The reduced row echelon form is: \n");
     for (i = 0; i < m; i++) {
