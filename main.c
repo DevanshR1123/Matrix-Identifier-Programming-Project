@@ -25,15 +25,15 @@ int main() {
 
     printf("\n");
 
-    printf("rank of matrix is: %d\n", rank(a, m, n));
-    printf("nullity of matrix is: %d\n", nullity(a, m, n));
-    printf("trace of matrix is: %d\n\n", trace(a, m, n));
-    printf("Orthogonal Matrix: %s\n", orthogonal(a, m, n) ? "Yes" : "No");
-    printf("Diagonal Matrix: %s\n", diagmat(a, m, n) ? "Yes" : "No");
-    printf("Lower Triangular Matrix: %s\n", lowerT(a, m, n) ? "Yes" : "No");
-    printf("Upper Triangular Matrix: %s\n", upperT(a, m, n) ? "Yes" : "No");
-    printf("Skew Symmetric Matrix: %s\n", skewsymmetric(a, m, n) ? "Yes" : "No");
-    printf("Symmetric Matrix: %s\n", symmetric(a, m, n) ? "Yes" : "No");
+    // printf("rank of matrix is: %d\n", rank(a, m, n));
+    // printf("nullity of matrix is: %d\n", nullity(a, m, n));
+    // printf("trace of matrix is: %d\n\n", trace(a, m, n));
+    // printf("Orthogonal Matrix: %s\n", orthogonal(a, m, n) ? "Yes" : "No");
+    // printf("Diagonal Matrix: %s\n", diagmat(a, m, n) ? "Yes" : "No");
+    // printf("Lower Triangular Matrix: %s\n", lowerT(a, m, n) ? "Yes" : "No");
+    // printf("Upper Triangular Matrix: %s\n", upperT(a, m, n) ? "Yes" : "No");
+    // printf("Skew Symmetric Matrix: %s\n", skewsymmetric(a, m, n) ? "Yes" : "No");
+    // printf("Symmetric Matrix: %s\n", symmetric(a, m, n) ? "Yes" : "No");
 
     printf("\n");
 
@@ -42,7 +42,7 @@ int main() {
     printf("The reduced row echelon form is: \n");
     print_mat_float(x, m, n);
 
-    getch();
+    // getch();
 
     return 0;
 }
