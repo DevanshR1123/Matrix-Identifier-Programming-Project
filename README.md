@@ -2,4 +2,4 @@
 
 ##
 
-I have a matrix of size `n x m` and I want to know the properties of the matrix.
+I have a matrix of size `m x n` and I want to know the properties of the matrix.
