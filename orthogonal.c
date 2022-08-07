@@ -1,7 +1,7 @@
 // Determine if matrix is orthogonal
 
 int orthogonal(int x[MAX_ROWS][MAX_COLS], int a, int b) {
-    int transx[MAX_ROWS][MAX_COLS], multiplication[MAX_ROWS][MAX_ROWS], i, j, rank_m;
+    int transx[MAX_ROWS][MAX_COLS], multiplication[MAX_ROWS][MAX_COLS], i, j, rank_m;
 
     copy(transx, x, a, b);
 

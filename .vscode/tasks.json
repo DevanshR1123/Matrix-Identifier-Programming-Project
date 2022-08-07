@@ -8,9 +8,9 @@
       "args": [
         "-fdiagnostics-color=always",
         "-g",
-        "${file}",
+        "main.c",
         "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        "${fileDirname}\\Matrix_Identifier.exe"
       ],
       "options": {
         "cwd": "${fileDirname}"
