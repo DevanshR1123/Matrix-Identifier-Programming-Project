@@ -7,8 +7,6 @@ void rref(float x[MAX_ROWS][MAX_COLS], int a[MAX_ROWS][MAX_COLS], int m, int n) 
     copy_float_int(x, a, m, n);
 
     sort_rows(x, m, n);
-    printf("\nSorted Matrix:\n");
-    print_mat_float(x, m, n);
 
     for (int i = 0; i < m; i++) {
         p = x[i][i];
