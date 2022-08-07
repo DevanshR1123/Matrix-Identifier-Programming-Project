@@ -7,6 +7,9 @@ void print_mat_float(float[MAX_ROWS][MAX_COLS], int, int);
 void copy(int[MAX_ROWS][MAX_COLS], int[MAX_ROWS][MAX_COLS], int, int);
 void copy_float(float[MAX_ROWS][MAX_COLS], float[MAX_ROWS][MAX_COLS], int, int);
 void copy_float_int(float[MAX_ROWS][MAX_COLS], int[MAX_ROWS][MAX_COLS], int, int);
+void sort_rows(float[MAX_ROWS][MAX_COLS], int, int);
+void swap_rows(float[MAX_ROWS][MAX_COLS], int, int, int, int);
+void swap_float(float*, float*);
 
 int rank(int[MAX_ROWS][MAX_ROWS], int, int);
 int nullity(int[MAX_ROWS][MAX_ROWS], int, int);
@@ -36,6 +39,7 @@ void scalar_multiply(int[MAX_ROWS][MAX_COLS], int, int, int);
 #include "rref.c"
 #include "scalar_multiply.c"
 #include "skew_symmetric.c"
+#include "sort_rows.c"
 #include "swap.c"
 #include "symmetric.c"
 #include "trace.c"
