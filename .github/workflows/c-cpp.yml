@@ -2,7 +2,6 @@ name: C/C++
 
 on:
   workflow_dispatch:
-      
 
 jobs:
   build:
@@ -11,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: compile
-        run: gcc -g main.c -o "Executable/Matrix_Identifier.exe"
+        run: gcc -g main.c -o "Executable/Matrix_Identifier_Auto.exe"
 
       - name: commit
         run: |
