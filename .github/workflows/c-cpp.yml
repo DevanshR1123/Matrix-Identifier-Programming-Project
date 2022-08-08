@@ -17,7 +17,7 @@ jobs:
       run: gcc main.c -o "Matrix_Identifier.exe"
 
     - name: commit 
-      run:| 
+      run: | 
          git config --local user.email "action@github.com" 
          git config --local user.name "GitHub Action" 
          git commit -m "Add changes" -a 
