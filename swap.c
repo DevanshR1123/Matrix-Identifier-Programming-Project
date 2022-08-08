@@ -12,6 +12,7 @@ void swap_float(float *a, float *b) {
 }
 
 void swap_rows(float a[MAX_ROWS][MAX_COLS], int m, int n, int i, int j) {
-    for (int k = 0; k < n; k++)
+    int k;
+    for ( k = 0; k < n; k++)
         swap_float(&a[i][k], &a[j][k]);
 }
