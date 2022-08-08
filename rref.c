@@ -3,7 +3,7 @@
 // funtction to find reduced row echelon form
 void rref(float x[MAX_ROWS][MAX_COLS], int y[MAX_ROWS][MAX_COLS], int m, int n) {
     float p;
-    int i, j, k;
+    int i, j, k, a, b;
 
     copy_float_int(x, y, m, n);
 

@@ -42,7 +42,7 @@ int main() {
     printf("The reduced row echelon form is: \n");
     print_mat_float(x, m, n);
 
-    getch();
+    // getch();
 
     return 0;
 }
