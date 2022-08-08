@@ -1,27 +1,26 @@
-name: C/C++ CI
+name: C/C++
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: compile
-      run: gcc main.c -o "Matrix_Identifier.exe"
+      - uses: actions/checkout@v3
+      - name: compile
+        run: gcc -g main.c -o "Executable/Matrix_Identifier.exe"
 
-    - name: commit 
-      run: | 
-         git config --local user.email "action@github.com" 
-         git config --local user.name "GitHub Action" 
-         git commit -m "Add changes" -a 
-    - name: Push changes 
-      uses: ad-m/github-push-action@master 
-      with: 
-       github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: commit
+        run: |
+          git config --local user.email "action@github.com" 
+          git config --local user.name "GitHub Action" 
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
