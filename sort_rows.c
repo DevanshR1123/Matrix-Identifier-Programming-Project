@@ -1,8 +1,5 @@
 // function to sort rows of a matrix
 
-#include <conio.h>
-#include <stdio.h>
-
 void sort_rows(float a[MAX_ROWS][MAX_COLS], int m, int n) {
     int i, j;
     for ( i = 0; i < m; i++)
