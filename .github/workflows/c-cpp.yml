@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: configure
-      run: gcc main.c -o Matrix_Identifier.exe
+      run: gcc main.c -o "Matrix_Identifier.exe"
 
-    - name: Commit files 
+    - name: commit 
        run: | 
          git config --local user.email "action@github.com" 
          git config --local user.name "GitHub Action" 
