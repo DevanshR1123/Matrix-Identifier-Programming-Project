@@ -1,11 +1,11 @@
 
 
 // funtction to find reduced row echelon form
-void rref(float x[MAX_ROWS][MAX_COLS], int a[MAX_ROWS][MAX_COLS], int m, int n) {
+void rref(float x[MAX_ROWS][MAX_COLS], int y[MAX_ROWS][MAX_COLS], int m, int n) {
     float p;
-    int i, j, k,a,b;
+    int i, j, k;
 
-    copy_float_int(x, a, m, n);
+    copy_float_int(x, y, m, n);
 
     sort_rows(x, m, n);
 
