@@ -10,7 +10,7 @@
         "-g",
         "main.c",
         "-o",
-        "${fileDirname}\\Matrix_Identifier.exe"
+        "${fileDirname}\\Executable\\Matrix_Identifier.exe"
       ],
       "options": {
         "cwd": "${fileDirname}"
